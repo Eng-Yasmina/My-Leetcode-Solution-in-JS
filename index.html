@@ -10,7 +10,7 @@
     <script>
     let response = prompt('Hi, What do you think right now? :)', '');
     function LongestWord(str) {
-    // TODO convert the input srting to array of strings then sort it in an ascending order according to the num of the digits in each word
+    // TODO convert the input srting to array of strings then sort it in an descending order according to the num of the digits in each word
     let longestWord = str.split(' ').sort(function(a, b) { return b.length - a.length; });
     // return the removed element from the start of the array (the longest word)
     return longestWord.shift();
