@@ -11,12 +11,12 @@
     let response = prompt('Hi, What do you think right now? :)', '');
     function LongestWord(str) {
     // TODO convert the input srting to array of strings then sort it in an descending order according to the num of the digits in each word
-    let longestWord = str.split(' ').sort(function(a, b) { return b.length - a.length; });
+    let longestWord = str.split(' ').sort(function(a, b) {return b.length - a.length;});
     // return the removed element from the start of the array (the longest word)
     return longestWord.shift();
     }
     let final = LongestWord(response);    
-    document.write(`<h1 style="color: Red;">surprise! The word "${final}" is the longest in your string. :)</h1>`); 
+    document.write(`<h1>surprise! The word <span style="color: Red";>"${final}"</span> is the longest in your string :)</h1>`); 
     </script>
 </body>
 </html>
