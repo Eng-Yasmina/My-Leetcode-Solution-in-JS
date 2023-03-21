@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmine-ITI-CMS</title>
+</head>
+<body>
+    <script>
+    let response = prompt('Hi, What do you think right now? :)', '');
+    function LongestWord(str) {
+    // TODO convert the input srting to array of strings then sort it in an ascending order according to the num of the digits in each word
+    let longestWord = str.split(' ').sort();
+    // return the removed element from the end of the array (the longest word)
+    return longestWord.pop();
+    }
+    let final = LongestWord(response);    
+    document.write(`<h1 style="color: Red;">surprise! The word "${final}" is the longest in your string. :)</h1>`); 
+    </script>
+</body>
+</html>
